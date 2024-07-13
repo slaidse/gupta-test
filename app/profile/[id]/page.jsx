@@ -1,5 +1,5 @@
 'use client'
-
+import { Suspense } from 'react';
 import { useState, useEffect } from 'react'
 import { useSearchParams} from 'next/navigation'
 import Profile from '@components/Profile'
@@ -51,11 +51,13 @@ const UserProfile = ({params}) => {
     // }
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <Profile
     name = {userName}
     desc = {`Welcome to ${userName} personalized profile page`}
     data = {userPosts}
     />
+    </Suspense>
   )
 }
 
