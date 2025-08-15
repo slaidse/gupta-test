@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from '@node_modules/next/link'
+import Link from 'next/link'
+
 
 const Question = ({ subject, qsnumber, subqs, ms}) => {
   return (
@@ -7,6 +8,7 @@ const Question = ({ subject, qsnumber, subqs, ms}) => {
              <h1 className='header '>
                    dsad
              </h1>
+             
              <h1 className='header '>
 
              </h1>
