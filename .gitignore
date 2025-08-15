@@ -3,9 +3,9 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp.git 
 .yarn/install-state.gz
-.env
+.env.local
 
 # testing
 /coverage

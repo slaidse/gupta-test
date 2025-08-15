@@ -11,6 +11,17 @@ const nextConfig = {
             ...config.experiments,
             topLevelAwait: true,
         };
+        
+        // Add path aliases
+        config.resolve.alias = {
+            ...config.resolve.alias,
+            '@styles': new URL('./styles', import.meta.url).pathname,
+            '@components': new URL('./components', import.meta.url).pathname,
+            '@utils': new URL('./utils', import.meta.url).pathname,
+            '@lib': new URL('./lib', import.meta.url).pathname,
+            '@hooks': new URL('./hooks', import.meta.url).pathname
+        };
+        
         return config;
     },
 };
