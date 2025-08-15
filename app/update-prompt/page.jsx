@@ -58,6 +58,7 @@ const EditPrompt = () => {
       }
     }
 
+    if (!promptId) return null
  return (
   <Suspense>
     <Form
